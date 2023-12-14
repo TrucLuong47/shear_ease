@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "customer_app",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/customer/main_customer.dart",
+            "args": [
+                "--flavor",
+                "customer",
+                "--target",
+                "lib/customer/main_customer.dart",
+                "--dart-define=appType=customer"
+            ]
+        },
+        {
+            "name": "hair_dresser_app",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/hairdresser/main_hair_dresser.dart",
+            "args": [
+                "--flavor",
+                "hair_dresser",
+                "--target",
+                "lib/hairdresser/main_hair_dresser.dart",
+                "--dart-define=appType=hairDresser"
+            ]
+        }
+    ]
+}
